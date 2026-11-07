@@ -1,0 +1,9 @@
+torch>=2.1
+torchvision
+transformers>=4.40
+numpy
+pillow
+scipy
+scikit-learn
+matplotlib
+tqdm

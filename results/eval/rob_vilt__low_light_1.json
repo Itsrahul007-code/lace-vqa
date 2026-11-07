@@ -1,0 +1,36 @@
+{
+  "accuracy": 0.1814,
+  "n": 1000,
+  "by_type": {
+    "number": {
+      "accuracy": 0.0,
+      "n": 14
+    },
+    "other": {
+      "accuracy": 0.2064569536423841,
+      "n": 604
+    },
+    "unanswerable": {
+      "accuracy": 0.07827380952380951,
+      "n": 336
+    },
+    "yes/no": {
+      "accuracy": 0.6608695652173913,
+      "n": 46
+    }
+  },
+  "unanswerable_f1": 0.0,
+  "accuracy_answerable_only": 0.23358433734939757,
+  "model": "vilt",
+  "run_dir": null,
+  "dataset": "vizwiz",
+  "corruption": "low_light",
+  "severity": 1,
+  "max_side": 640,
+  "int8": false,
+  "int8_novision": false,
+  "device": "cuda",
+  "n_samples": 1000,
+  "seconds": 68.65239071846008,
+  "throughput_qps": 14.566135127048211
+}

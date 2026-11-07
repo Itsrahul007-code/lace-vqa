@@ -1,0 +1,38 @@
+{
+  "accuracy": 0.5512,
+  "n": 1000,
+  "by_type": {
+    "number": {
+      "accuracy": 0.4214285714285714,
+      "n": 14
+    },
+    "other": {
+      "accuracy": 0.30596026490066225,
+      "n": 604
+    },
+    "unanswerable": {
+      "accuracy": 0.9979166666666667,
+      "n": 336
+    },
+    "yes/no": {
+      "accuracy": 0.5478260869565218,
+      "n": 46
+    }
+  },
+  "answerability_ap": 0.8791053871614766,
+  "unanswerable_f1": 0.5205905205905206,
+  "accuracy_answerable_only": 0.3251506024096385,
+  "model": "lace",
+  "run_dir": "/content/work/runs/viz_lace_s0",
+  "dataset": "vizwiz",
+  "corruption": "gaussian_blur",
+  "severity": 5,
+  "max_side": 640,
+  "int8": false,
+  "int8_novision": false,
+  "device": "cuda",
+  "n_samples": 1000,
+  "seconds": 53.18407583236694,
+  "throughput_qps": 18.80262060305308,
+  "mean_p_answerable": 0.21283515582850668
+}

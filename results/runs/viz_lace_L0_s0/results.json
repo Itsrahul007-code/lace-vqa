@@ -1,0 +1,145 @@
+{
+  "dataset": "vizwiz",
+  "model": "lace",
+  "seed": 0,
+  "backbone": "openai/clip-vit-base-patch16",
+  "config": {
+    "dim_vision": 768,
+    "dim_text": 512,
+    "dim_proj": 512,
+    "n_img_tokens": 49,
+    "max_q_len": 32,
+    "d_model": 384,
+    "n_heads": 6,
+    "n_layers": 0,
+    "ffn_mult": 4,
+    "dropout": 0.1,
+    "bidirectional": true,
+    "use_patch": true,
+    "use_global": true,
+    "n_answers": 3000,
+    "n_types": 4,
+    "residual_fusion": true,
+    "global_hidden": 1024,
+    "global_dropout": 0.5,
+    "global_inputs": 4
+  },
+  "trainable_params": 8373823,
+  "best_epoch": 15,
+  "train_time_s": 188.2791931629181,
+  "n_train": 18471,
+  "max_train": 0,
+  "init_from": null,
+  "w_answerable": 0.5,
+  "w_type": 0.2,
+  "vocab_size": 3000,
+  "oracle_acc": {
+    "dev": 0.815594541910329,
+    "test": 0.8206992359342511
+  },
+  "threshold": 0.55,
+  "dev": {
+    "argmax": {
+      "accuracy": 0.6125730994152047,
+      "n": 2052,
+      "by_type": {
+        "number": {
+          "accuracy": 0.28400000000000003,
+          "n": 25
+        },
+        "other": {
+          "accuracy": 0.4653372008701958,
+          "n": 1379
+        },
+        "unanswerable": {
+          "accuracy": 0.9707052441229655,
+          "n": 553
+        },
+        "yes/no": {
+          "accuracy": 0.751578947368421,
+          "n": 95
+        }
+      },
+      "answerability_ap": 0.9622686411151798,
+      "unanswerable_f1": 0.56957928802589,
+      "accuracy_answerable_only": 0.4804536357571715
+    },
+    "gated": {
+      "accuracy": 0.6130116959064328,
+      "n": 2052,
+      "by_type": {
+        "number": {
+          "accuracy": 0.28400000000000003,
+          "n": 25
+        },
+        "other": {
+          "accuracy": 0.4653372008701958,
+          "n": 1379
+        },
+        "unanswerable": {
+          "accuracy": 0.9737793851717902,
+          "n": 553
+        },
+        "yes/no": {
+          "accuracy": 0.743157894736842,
+          "n": 95
+        }
+      },
+      "answerability_ap": 0.9622686411151798,
+      "unanswerable_f1": 0.5712748789671867,
+      "accuracy_answerable_only": 0.4799199466310874
+    }
+  },
+  "test": {
+    "argmax": {
+      "accuracy": 0.6448946515397083,
+      "n": 4319,
+      "by_type": {
+        "number": {
+          "accuracy": 0.4312499999999999,
+          "n": 48
+        },
+        "other": {
+          "accuracy": 0.4740245261984392,
+          "n": 2691
+        },
+        "unanswerable": {
+          "accuracy": 0.9770397111913358,
+          "n": 1385
+        },
+        "yes/no": {
+          "accuracy": 0.6964102564102564,
+          "n": 195
+        }
+      },
+      "answerability_ap": 0.9483503776612289,
+      "unanswerable_f1": 0.6048203728967713,
+      "accuracy_answerable_only": 0.48810497614178594
+    },
+    "gated": {
+      "accuracy": 0.6450567260940032,
+      "n": 4319,
+      "by_type": {
+        "number": {
+          "accuracy": 0.4312499999999999,
+          "n": 48
+        },
+        "other": {
+          "accuracy": 0.4740245261984392,
+          "n": 2691
+        },
+        "unanswerable": {
+          "accuracy": 0.9790613718411553,
+          "n": 1385
+        },
+        "yes/no": {
+          "accuracy": 0.6856410256410257,
+          "n": 195
+        }
+      },
+      "answerability_ap": 0.9483503776612289,
+      "unanswerable_f1": 0.6055794964844636,
+      "accuracy_answerable_only": 0.48738922972051807
+    }
+  }
+}

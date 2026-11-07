@@ -1,0 +1,38 @@
+{
+  "accuracy": 0.6390999999999999,
+  "n": 1000,
+  "by_type": {
+    "number": {
+      "accuracy": 0.6357142857142858,
+      "n": 14
+    },
+    "other": {
+      "accuracy": 0.4445364238410596,
+      "n": 604
+    },
+    "unanswerable": {
+      "accuracy": 0.9815476190476191,
+      "n": 336
+    },
+    "yes/no": {
+      "accuracy": 0.6934782608695652,
+      "n": 46
+    }
+  },
+  "answerability_ap": 0.9438539728947097,
+  "unanswerable_f1": 0.606845513413506,
+  "accuracy_answerable_only": 0.4658132530120481,
+  "model": "lace",
+  "run_dir": "/content/work/runs/viz_clipmlp_s0",
+  "dataset": "vizwiz",
+  "corruption": "rotation",
+  "severity": 1,
+  "max_side": 640,
+  "int8": false,
+  "int8_novision": false,
+  "device": "cuda",
+  "n_samples": 1000,
+  "seconds": 48.95029616355896,
+  "throughput_qps": 20.42888559159423,
+  "mean_p_answerable": 0.6770590892005712
+}

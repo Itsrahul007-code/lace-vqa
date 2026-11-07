@@ -1,0 +1,36 @@
+{
+  "accuracy": 0.1805,
+  "n": 1000,
+  "by_type": {
+    "number": {
+      "accuracy": 0.0,
+      "n": 14
+    },
+    "other": {
+      "accuracy": 0.19834437086092713,
+      "n": 604
+    },
+    "unanswerable": {
+      "accuracy": 0.07857142857142857,
+      "n": 336
+    },
+    "yes/no": {
+      "accuracy": 0.7456521739130434,
+      "n": 46
+    }
+  },
+  "unanswerable_f1": 0.0,
+  "accuracy_answerable_only": 0.23207831325301204,
+  "model": "blip",
+  "run_dir": null,
+  "dataset": "vizwiz",
+  "corruption": "rotation",
+  "severity": 1,
+  "max_side": 640,
+  "int8": false,
+  "int8_novision": false,
+  "device": "cuda",
+  "n_samples": 1000,
+  "seconds": 96.57322525978088,
+  "throughput_qps": 10.354836936531957
+}
